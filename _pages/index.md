@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Home
+title: New Wander Home
 id: home
 permalink: /
+description: Find a new wander.
 ---
 
 # Explore resources and ideas 🌱
