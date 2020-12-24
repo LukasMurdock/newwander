@@ -1,7 +1,5 @@
 ---
-layout: page
-title: About
-permalink: /about
+title: New Wander
 ---
 
 ## About this site
@@ -9,6 +7,7 @@ permalink: /about
 New Wander is run by [[Lukas Murdock]].
 
 The idea is for me to journey from idea to idea without a certain course. I hope you might find some topics as interesting as I have.
+
 
 ## Development
 

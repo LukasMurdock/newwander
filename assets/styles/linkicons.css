@@ -1,0 +1,60 @@
+---
+layout: none
+---
+/* After all */
+
+
+/* {{item}}
+a[href*='{{item}}']::after{% if forloop.last %}{% else %},{% endif %} */
+
+{% for linkicon in site.data.linkicons %}
+{% assign lastLink = forloop.last %}
+    {% for link in linkicon.list %}
+        a[href*='{{link}}']::after{% unless lastLink and forloop.last == true %},{% endunless %}
+    {% endfor %}
+{% endfor %}
+{
+	content: "";
+	display: inline-block;
+	position: static;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	margin: 0 0 0 2px;
+	font-size: 1em
+}
+
+/* Sizing */
+
+{% for linkicon in site.data.linkicons %}
+    {% for link in linkicon.list %}
+        a[href*='{{link}}']::after{% unless forloop.last == true %},{% endunless %}
+    {% endfor %}
+    {
+        background-image: url({{linkicon.icon}});
+        height: 1em;
+        width: 1em;
+        margin: 0 0 2px 3px;
+        opacity: .6
+    }
+
+    {% for link in linkicon.list %}
+    a[href*='{{link}}']:hover::after{% unless forloop.last == true %},{% endunless %}
+    {% endfor %}
+    {
+        opacity: .4
+    }
+
+{% endfor %}
+
+/* a[href*='lukasmurdock.com']::after {
+	background-image: url(/assets/icons/lukasmurdock.svg);
+	height: 1em;
+	width: 1em;
+	margin: 0 0 2px 3px;
+	opacity: .6
+}
+
+a[href*='lukasmurdock.com']:hover::after {
+	opacity: .4
+} */
+
