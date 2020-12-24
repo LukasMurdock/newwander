@@ -1,0 +1,7 @@
+---
+layout: none
+---
+.graph-wrapper svg {
+    max-height: 50vh;
+    max-width: 100%;
+}
