@@ -9,7 +9,7 @@ guest: Lukas Murdock
 
 Guest: [[Lukas Murdock]]
 
-The very first episode of New Wander.
+The very first episode of New Wander. For posterity, this is a test run but I thought it would be interesting to look back on.
 
 <div style="position: relative;padding-bottom: 56.25%;height: 0;">
 <iframe style="position: absolute;top:0;left:0;width:100%;height:100%;" width="560" height="315" src="https://www.youtube.com/embed/{{ page.youtubeID }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
